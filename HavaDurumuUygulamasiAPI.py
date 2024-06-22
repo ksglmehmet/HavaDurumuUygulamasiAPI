@@ -6,7 +6,7 @@ import json
 while True:
 
     Sehir = input("\nLütfen Hava Durumunu Öğrenmek İstediğiniz Şehri Giriniz: ")
-    apikey = "9c5b53f9db32bd0b8b69adb91339e832"
+    apikey = ""
     adres = f"https://api.openweathermap.org/data/2.5/weather?q={Sehir}&appid={apikey}&lang=tr&units=metric" #&lang api olarakta veriliyormuş, TR olarak seçtim. Kullanıcının seçmesinide isteyebilirdim.
     # units=metric ile santigrad olarak veriyi çekiyorum Apiden.
     baglan = requests.get(adres) # Siteye bağlanma talebini, requests.get metoduyla yapıyoruz.
